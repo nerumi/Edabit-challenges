@@ -13,7 +13,7 @@ public class NumericStrings {
         return Integer.toString(Integer.parseInt(a) + Integer.parseInt(b));
     }
 
-    /* Elegante Lösung:
+    /* Elegant solution:
     public static String add(String a, String b) {
         try {
             return Integer.toString(Integer.parseInt(a) + Integer.parseInt(b));

@@ -14,7 +14,7 @@ public class InstantJazz {
         return chord;
 	}
 
-    /* Elegante Lösung:
+    /* Elegant solution:
     public static String[]  jazzify(String[] arr) {
 		return arr.length == 0 ? new String[]{} : java.util.Arrays.stream(arr).map(s -> s.endsWith("7")==true ? s : s+"7").toArray(String[]::new);
 	} */

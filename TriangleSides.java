@@ -11,7 +11,7 @@ public class TriangleSides {
         return result;
     }
     
-    /* Elegante Lösung:
+    /* Elegant solution:
     public static double[] otherSides(int n) {
         return new double[]{n*2.0, n*1.7};
     } */

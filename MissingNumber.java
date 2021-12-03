@@ -15,7 +15,7 @@ public class MissingNumber {
         return -1;
 	}
 
-    /* Elegante Lösung:
+    /* Elegant solution:
     public static int missingNum(int[] nums) {
         return 55-java.util.Arrays.stream(nums).sum();
     } */

@@ -17,7 +17,7 @@ public class NumberIsPandigital {
         return true;
     }
 
-    /* Elegante Lösung:
+    /* Elegant solution:
     public static boolean isPandigital(long num) {
         return String.valueOf(num).chars().distinct().count() == 10;
     } */

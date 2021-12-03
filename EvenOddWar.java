@@ -17,14 +17,13 @@ public class EvenOddWar {
         return even > odd ? even - odd : odd - even;    // return Math.abs(even - odd);
     }
 
-    /* Elegante Lösung
-     * reduce nimmt eine Identität und eine zugehörige assoziative Funktion ( (a*b)*c = a*(b*c) ) und reduziert den Stream auf ein Ergebnis.
-     * z.B. min, max, Summe können so gebildet werden.
+    /** Elegant solution:
+     * reduce takes an identity and a related associative function ( (a*b)*c = a*(b*c) ) and reduces the stream to a single result.
+     * i.e. min, max, sum can be calculated this way
      * 
-     * In der Lösung unten werden die zwei Parameter addiert oder subtrahiert, abhängig davon, ob b ungerade ist oder nicht.
-     * Die Abfrage auf ungerade könnte auch (b % 2) == 1 lauten, aber bitweises verunden mit 1 funtioniert genause, weil alle ungeraden
-     * Zahlen in ihrer bitweisen Darstellung eine 1 an letzter Stelle haben.
-     * Schlussendlich werden alle geraden Zahlen subtrahiert und alle ungeraden Zahlen addiert und schließlich der Absolutwert returned.
+     * In the solution below the two parameters are either added or substracted from one another, depending on wether they're even or odd.
+     * The boolean logic for odd could just as well be (b % 2) == 1, but using bitwise AND with 1 is correct as well because all uneven numbers in binary form have a 1 at the end.
+     * The solution works by substracting all even numbers and adding all uneven numbers and returning the absolut value as a result.
      * 
     public static int warOfNumbers(int[] numbers){
         return Math.abs(java.util.Arrays.stream(numbers).reduce(0, (a, b) -> (b & 1) == 1 ? a + b : a - b));
